@@ -13,3 +13,25 @@
   text-decoration: none;
   list-style-type: none;
 }
+
+/* === NAVIGATION === */
+header {
+  background-color: white;
+  position: sticky;
+  top: 0;
+  width: 100%;
+}
+
+header nav ul {
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+}
+
+header nav a {
+  display: block;
+  font-family: 'Uncial Antiqua', serif;
+  font-size: 0.9rem;
+  padding: 0.75rem 0.5rem;
+  letter-spacing: 0.1rem;
+}
