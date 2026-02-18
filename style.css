@@ -35,3 +35,28 @@ header nav a {
   padding: 0.75rem 0.5rem;
   letter-spacing: 0.1rem;
 }
+
+/* === ABOUT SECTION === */
+#about {
+  padding: 1.5rem 1rem;
+  text-align: center;
+}
+
+#about h2 {
+  font-family: 'Uncial Antiqua', serif;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+#about img {
+  display: block;
+  max-width: 100%;
+  margin: 0 auto 1rem auto;
+}
+
+#about p {
+  font-family: 'Lato', sans-serif;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
