@@ -108,7 +108,12 @@ header nav a:hover {
 
 #about p {
   font-size: 1rem;
-  margin-bottom: 1rem;
+  margin-bottom: 1px;
+}
+
+#about img {
+  border-radius: 0.3rem;
+  border: 2px solid var(--color-border);
 }
 
 /* === ARMORY SECTION === */
@@ -197,7 +202,7 @@ header nav a:hover {
   margin-bottom: 1rem;
 }
 
-@media (min-width: 425px) and (max-width: 767px) {
+@media (min-width: 425px) and (max-width: 1400px) {
   .skill-card {
     flex-direction: row;
   }
@@ -205,5 +210,77 @@ header nav a:hover {
   #contact {
     background-image: url('./assets/images/raven-425px.webp');
     background-position: center;
+  }
+}
+
+@media (min-width: 1401px) {
+  header nav ul {
+    justify-content: center;
+    gap: 5rem;
+  }
+
+  header nav a {
+    font-size: 2rem;
+  }
+
+  #about {
+    margin-top: 2rem;
+    flex-direction: row;
+    justify-content: center;
+    gap: 0;
+  }
+
+  #about h2 {
+    display: none;
+  }
+
+  #about img {
+    width: 80%;
+    height: 80%;
+  }
+
+  #about p {
+    width: 20%;
+    height: 20%;
+    line-height: 2;
+    letter-spacing: 0.2rem;
+  }
+
+  #armory {
+    display: grid;
+    grid-template-columns: repeat(3, 300px);
+    grid-template-rows: repeat(2, auto);
+    gap: 1.5rem;
+    padding: 4rem;
+    justify-content: center;
+  }
+
+  #armory .section-title {
+    grid-column: 1 / -1;
+  }
+
+  #contact em {
+    font-size: 1rem;
+  }
+
+}
+
+@media(min-width: 768px) {
+  #contact {
+    background-image: url('./assets/images/raven-425px.webp');
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+}
+
+@media (min-width: 768px)and (max-width: 1401px) {
+  header nav ul {
+    justify-content: center;
+    gap: 5rem;
+  }
+
+  header nav a {
+    font-size: 1.2rem;
   }
 }
