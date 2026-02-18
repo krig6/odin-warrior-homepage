@@ -99,3 +99,46 @@ header nav a {
   font-size: 0.9rem;
   line-height: 1.5;
 }
+
+/* === CONTACT SECTION === */
+#contact {
+  padding: 2rem 1rem;
+  text-align: center;
+  color: white;
+  position: relative;
+  background-image: url('./assets/images/raven-mobile.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+}
+
+#contact h2 {
+  font-family: 'Uncial Antiqua', serif;
+  font-size: 1.5rem;
+}
+
+#contact p {
+  font-family: 'Lato', sans-serif;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.contact-grid {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  padding: 0;
+}
+
+.contact-card a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.8rem;
+  color: white;
+}
