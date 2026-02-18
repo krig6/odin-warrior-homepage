@@ -26,52 +26,10 @@
   --color-border: #2A2510;
 }
 
+/* === BASE === */
 body {
   background-color: var(--color-bg);
   color: var(--color-text);
-}
-
-/* === SHARED SECTION STYLES === */
-#about,
-#armory,
-#contact {
-  padding: 1rem;
-  text-align: center;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-}
-
-#about,
-#armory {
-  background-color: var(--color-bg);
-}
-
-.skill-description p,
-#about p {
-  color: var(--color-text-muted);
-}
-
-.section-title {
-  font-family: 'Uncial Antiqua', serif;
-  font-size: 1.5rem;
-  margin-bottom: 1rem;
-  letter-spacing: 0.2rem;
-}
-
-#about p,
-#armory .skill-description p,
-#contact p {
-  font-family: 'Lato', sans-serif;
-  font-size: 1rem;
-  line-height: 1.5;
-}
-
-#about img,
-.skill-card img {
-  display: block;
-  max-width: 100%;
-  margin: 0 auto 1rem auto;
 }
 
 /* === NAVIGATION === */
@@ -101,6 +59,49 @@ header nav a:hover {
   color: var(--color-accent-highlight);
 }
 
+/* === SHARED SECTION STYLES === */
+#about,
+#armory,
+#contact {
+  padding: 1rem;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+#about,
+#armory {
+  background-color: var(--color-bg);
+}
+
+.section-title {
+  font-family: 'Uncial Antiqua', serif;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  letter-spacing: 0.2rem;
+}
+
+#about p,
+#armory .skill-description p,
+#contact p {
+  font-family: 'Lato', sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.skill-description p,
+#about p {
+  color: var(--color-text-muted);
+}
+
+#about img,
+.skill-card img {
+  display: block;
+  max-width: 100%;
+  margin: 0 auto 1rem auto;
+}
+
 /* === ABOUT SECTION === */
 #about {
   margin-bottom: 1rem;
@@ -123,9 +124,6 @@ header nav a:hover {
   gap: 0.75rem;
   margin-bottom: 2rem;
   align-items: center;
-}
-
-.skill-card {
   background-color: var(--color-surface);
   border: 1px solid var(--color-border);
   padding: 1rem;
@@ -168,6 +166,17 @@ header nav a:hover {
   position: relative;
 }
 
+#contact p {
+  margin-bottom: 1rem;
+}
+
+#contact em {
+  color: var(--color-text-muted);
+  font-style: italic;
+  font-size: 0.9rem;
+  letter-spacing: 0.05rem;
+}
+
 .contact-grid {
   display: flex;
   justify-content: center;
@@ -180,10 +189,6 @@ header nav a:hover {
   align-items: center;
   justify-content: center;
   font-size: 1.8rem;
-  color: white;
-}
-
-.contact-card a {
   color: var(--color-accent-highlight);
 }
 
@@ -191,17 +196,7 @@ header nav a:hover {
   color: var(--color-text);
 }
 
-#contact em {
-  color: var(--color-text-muted);
-  font-style: italic;
-  font-size: 0.9rem;
-  letter-spacing: 0.05rem;
-}
-
-#contact p {
-  margin-bottom: 1rem;
-}
-
+/* === MEDIA QUERIES === */
 @media (min-width: 425px) and (max-width: 1400px) {
   .skill-card {
     flex-direction: row;
@@ -210,6 +205,25 @@ header nav a:hover {
   #contact {
     background-image: url('./assets/images/raven-425px.webp');
     background-position: center;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1401px) {
+  header nav ul {
+    justify-content: center;
+    gap: 5rem;
+  }
+
+  header nav a {
+    font-size: 1.2rem;
+  }
+}
+
+@media (min-width: 768px) {
+  #contact {
+    background-image: url('./assets/images/raven-425px.webp');
+    background-size: contain;
+    background-repeat: no-repeat;
   }
 }
 
@@ -261,26 +275,5 @@ header nav a:hover {
 
   #contact em {
     font-size: 1rem;
-  }
-
-}
-
-@media(min-width: 768px) {
-  #contact {
-    background-image: url('./assets/images/raven-425px.webp');
-    background-size: contain;
-    background-repeat: no-repeat;
-  }
-
-}
-
-@media (min-width: 768px)and (max-width: 1401px) {
-  header nav ul {
-    justify-content: center;
-    gap: 5rem;
-  }
-
-  header nav a {
-    font-size: 1.2rem;
   }
 }
