@@ -14,6 +14,36 @@
   list-style-type: none;
 }
 
+/* === SHARED SECTION STYLES === */
+#about,
+#armory,
+#contact {
+  padding: 1.5rem 1rem;
+  text-align: center;
+}
+
+.section-title {
+  font-family: 'Uncial Antiqua', serif;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  letter-spacing: 0.2rem;
+}
+
+#about p,
+#armory .skill-description p,
+#contact p {
+  font-family: 'Lato', sans-serif;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+#about img,
+.skill-card img {
+  display: block;
+  max-width: 100%;
+  margin: 0 auto 1rem auto;
+}
+
 /* === NAVIGATION === */
 header {
   background-color: white;
@@ -38,53 +68,21 @@ header nav a {
 
 /* === ABOUT SECTION === */
 #about {
-  padding: 1.5rem 1rem;
-  text-align: center;
-}
-
-#about h2 {
-  font-family: 'Uncial Antiqua', serif;
-  font-size: 1.5rem;
   margin-bottom: 1rem;
 }
 
-#about img {
-  display: block;
-  max-width: 100%;
-  margin: 0 auto 1rem auto;
-}
-
 #about p {
-  font-family: 'Lato', sans-serif;
   font-size: 0.95rem;
-  line-height: 1.5;
   margin-bottom: 1rem;
 }
 
 /* === ARMORY SECTION === */
-#armory {
-  padding: 1.5rem 1rem;
-  text-align: center;
-}
-
-#armory h2 {
-  font-family: 'Uncial Antiqua', serif;
-  font-size: 1.5rem;
-  margin-bottom: 1rem;
-}
-
 .skill-card {
   display: flex;
   flex-direction: column;
   gap: 0.75rem;
   margin-bottom: 2rem;
   align-items: center;
-}
-
-.skill-card img {
-  display: block;
-  max-width: 100%;
-  margin: 0 auto 1rem auto;
 }
 
 .skill-description strong {
@@ -94,16 +92,9 @@ header nav a {
   margin-bottom: 0.5rem;
 }
 
-.skill-description p {
-  font-family: 'Lato', sans-serif;
-  font-size: 0.9rem;
-  line-height: 1.5;
-}
-
 /* === CONTACT SECTION === */
 #contact {
   padding: 2rem 1rem;
-  text-align: center;
   color: white;
   position: relative;
   background-image: url('./assets/images/raven-mobile.png');
@@ -117,15 +108,8 @@ header nav a {
   gap: 1rem;
 }
 
-#contact h2 {
-  font-family: 'Uncial Antiqua', serif;
-  font-size: 1.5rem;
-}
-
 #contact p {
-  font-family: 'Lato', sans-serif;
   font-size: 0.95rem;
-  line-height: 1.5;
 }
 
 .contact-grid {
