@@ -196,3 +196,14 @@ header nav a:hover {
 #contact p {
   margin-bottom: 1rem;
 }
+
+@media (min-width: 425px) and (max-width: 767px) {
+  .skill-card {
+    flex-direction: row;
+  }
+
+  #contact {
+    background-image: url('./assets/images/raven-425px.webp');
+    background-position: center;
+  }
+}
