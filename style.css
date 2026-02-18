@@ -35,7 +35,7 @@ body {
 #about,
 #armory,
 #contact {
-  padding: 1.5rem 1rem;
+  padding: 1rem;
   text-align: center;
 }
 
@@ -137,7 +137,23 @@ header nav a:hover {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 1rem;
+  gap: .5rem;
+  position: relative;
+  background-image: url('./assets/images/raven-mobile.png');
+  background-size: cover;
+  background-position: center;
+  min-height: 300px;
+}
+
+#contact::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(10, 12, 20, 0.85);
+}
+
+#contact>* {
+  position: relative;
 }
 
 .contact-grid {
@@ -161,4 +177,15 @@ header nav a:hover {
 
 .contact-card a:hover {
   color: var(--color-text);
+}
+
+#contact em {
+  color: var(--color-text-muted);
+  font-style: italic;
+  font-size: 0.9rem;
+  letter-spacing: 0.05rem;
+}
+
+#contact p {
+  margin-bottom: 1rem;
 }
