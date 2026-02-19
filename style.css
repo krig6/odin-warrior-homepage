@@ -41,6 +41,7 @@ section {
   scroll-margin-top: 5rem;
 }
 
+
 /* === NAVIGATION === */
 header {
   background-color: var(--color-nav-bg);
@@ -406,4 +407,8 @@ header nav a:hover::after {
 
 nav a:hover {
   animation: torchFlicker 0.4s ease forwards;
+}
+
+.credit {
+  color: var(--color-text-muted);
 }
