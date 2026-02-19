@@ -26,6 +26,7 @@
 
 - **Responsive** layout for mobile, tablet, and desktop.
 - **Semantic HTML** structure for accessibility and SEO.
+- **Dynamic** animations and interactive elements
 - **Sticky navigation** with smooth section links.
 - **Optimized images** using WebP format.
 - **Custom fonts** and **Boxicons** for style and icons.
@@ -43,7 +44,6 @@ I realized that **proper preparation and planning**—from selecting images and 
 
 ## Future Enhancements
 
-- Add subtle animations to section transitions and hover effects.  
 - Explore additional responsive image techniques for performance.  
 - Improve accessibility with keyboard navigation and ARIA labels.  
 - Experiment with color themes or dark/light mode toggle.
