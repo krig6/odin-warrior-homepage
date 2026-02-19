@@ -26,10 +26,19 @@
   --color-border: #2A2510;
 }
 
+
 /* === BASE === */
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: var(--color-bg);
   color: var(--color-text);
+}
+
+section {
+  scroll-margin-top: 3rem;
 }
 
 /* === NAVIGATION === */
