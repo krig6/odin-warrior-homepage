@@ -1,4 +1,4 @@
-# Project: Odin Warrior Homepage
+# Project: Homepage
 
 ## Overview
 
